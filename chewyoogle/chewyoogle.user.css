@@ -1,0 +1,256 @@
+/* ==UserStyle==
+@name           chewyoogle
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Google
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyoogle/chewyoogle.user.css
+==/UserStyle== */
+
+@-moz-document
+url("https://www.google.com"),
+url("https://www.google.com/search"),
+regexp("https?://(www|encrypted|images|translate|accounts).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|intl|alerts|shopping|finance|calendar|nexus|contacts|services|advanced_search|voice|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p).*"),
+regexp("https://google\\..+") {
+	:root {
+		--base-0: #03030b;
+		--base-1: #040512;
+		--base-2: #060616;
+		--base-3: #090a24;
+		--base-4: #0b0c2d;
+		--base-5: #141337;
+		--base-6: #2d2857;
+		
+		--purp-dark:        #4e4581;
+		--purp-subtle:      #806fc0;
+		--purp-indigo-deep: #6161a3;
+		--purp-indigo:      #7171d3;
+		--purp-neon:        #7408ff;
+		--purp-bright:      #b66ffd;
+		--purp-white:       #b399ff;
+		
+		--blue-cornflower:  #5f95fa;
+		--blue-cyan:        #43cfea;
+		--blue:             #87afff;
+		--blue-electric:    #66ccff;
+		
+		--domain:              var(--purp-indigo);
+		--domain-subtitle:     var(--purp-indigo);
+		--domain-subtitle-ext: var(--purp-indigo-deep);
+		
+		--link: var(--blue-electric);
+		--link-visited: var(--purp-neon);
+		
+		--date: var(--purp-indigo-deep);
+		
+		--cool-white-0: #cad6ff;
+		--cool-white-1: #e8e0ff;
+	}
+		
+	:root {
+		/* Background of 
+		   - TextInput Backdrop, 
+		   - Search Type Bar, and 
+		   - Secondary Type Bar */
+		--xhUGwc: var(--base-0);
+		
+		/* Foreground of
+		   - TextInput Button: 
+		     - Magnifying Glass
+		     - Google Lens
+		     - Voice Input
+		     - Clear (X)
+		   - Context of Search Search Result */
+		--bbQxAb: var(--purp-subtle);
+		
+		--YLNNHc: var(--purp-subtle);
+	}
+	
+	body.srp, body {
+		background: var(--base-0);
+	 	--column-content: minmax(35rem,1fr);
+	}
+	.main#main { background: var(--base-0); } 
+	
+	@media (min-width: 1701px) { body { --column-left: 140px; } }
+	@media (min-width: 1301px)
+		and (max-width: 1700px) { body { --column-left: 60px; } }
+	@media (max-width: 1300px) { body { --column-left: 20px; } }
+	
+	/* Google Logo and Icon (shown when window width smol) */
+	.logo,
+	.iblpc,
+	.FgNLaf#_yGitaMbWLO6ovr0P8OXnyQM_1 { display: none; }
+	
+	.NDnoQ.P3mIxe /* <- Search Result, not Homepage */ .A8SBwf {
+		margin-left: 0px;
+		width: 100%;
+	}	
+	
+	/*
+	 * *** TextInput
+	 */
+	
+	/* TextInput: Backdrop */
+	#searchform div.sfbg { min-height: 87px; background: var(--base-0);}
+	#searchform.YNk70c, 
+	#searchform.CvDJxb {
+		display: grid;
+		grid-template-columns: var(--column-left) var(--column-content) minmax(1rem,30rem) 40px;
+	}
+	
+	/* TextInput: Bounding Box */
+	#searchform .RNNXgb { /* Web */
+		background: var(--base-3);
+		border-radius: 6px;
+	}
+	.P3mIxe { 
+		grid-column: 2/-2;
+	}
+	.CvDJxb { column-gap: 20px; } /* Images */
+	#searchform .Q3DXx { /* Images */
+		display: flex;
+		grid-column: 2/-2;
+		margin-left: 0px;
+		.A8SBwf {
+			margin-left: 0px;
+			width: 100%;
+		}
+	}
+	
+	
+	/* TextInput: Actual user input text */
+	textarea#APjFqb { 
+		color: var(--cool-white-1);
+		margin-left: 1.3rem;
+		font-weight: 420;
+	}
+	
+	/*
+	 * *** Apps and Account
+	 */
+	
+	/* Apps and Account: Apps */
+	.gb_H .gb_F, .gb_H .gb_E { fill: var(--purp-subtle); }
+	
+	/* Apps and Account: Account */
+	.gb_P { border-radius: 9px; }
+	.gb_B::before { border-radius: 6px; }
+	.Q3DXx #gb{ padding-right:0px; }
+	
+	/*
+	 *  ***  Search Type Bar
+	 */
+	
+	
+	#cnt > div > div > .YNk70c, /* Web */
+	#cnt > div > .Fgyi2e > div /* Images */{ 
+		display: grid;
+		column-gap: 28px;
+		grid-template-columns: var(--column-left) var(--column-content) 40px; 
+		.GG4mbd { grid-column: 2; } /* Images */
+	}
+	.sqbTcd { /* Images */
+		margin-left: 0px;
+	}
+	
+	
+	/* Search Type Bar: Font */
+	.R1QWuf, .M5dSnd {
+		color: var(--purp-subtle);
+		font-weight: 500;
+	}
+	
+	/* Search Type Bar [Selected]: Font */
+	[selected] .R1QWuf, 
+	[selected] .M5dSnd, 
+	.mXwfNd:hover .R1QWuf, 
+	.mXwfNd:hover .M5dSnd, 
+	.rNHry:hover  .R1QWuf, 
+	.mTpL7c:hover .R1QWuf, 
+	.mTpL7c:hover .M5dSnd, 
+	[aria-expanded="true"] .R1QWuf, 
+	[aria-expanded="true"] .M5dSnd { color: var(--cool-white-0); }
+	
+	/* Search Type Bar [Selected]: Underline */
+	[selected] .R1QWuf,
+	[selected] .M5dSnd { border-bottom-color: var(--cool-white-0); }
+	
+	/* Search Type Bar: Bottom Border */
+	.wZQcA .BO2cCe { border-bottom: 1px solid var(--base-4); }
+	
+	/* Images: Saved */
+	div#abss_bJ2xaOzEC_Xg0-kPyarE8AQ_1.iZzQ6e.VDgVie { display: none; }
+	
+	/*
+	 * *** Search Result
+	 */
+	
+	/* Did you mean? */
+	#taw { margin-left: 20px; }
+	
+	/* Search Result: Grid */
+	/* Margin Container */
+	#rcnt.YNk70c { 
+		column-gap: 28px;
+		grid-template-columns: var(--column-left) var(--column-content) 40px; 
+		
+		/* Column Container */
+		#w7tRq.UFQ0Gb {
+			column-gap: 0px;
+			grid-template-columns: 0px 1fr;
+			
+			/* Results Container */
+			#rso {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr)); 
+				&> div:not(.MjjYud) { display: contents; } /* Web: Nesting sub-div outdenting */
+			}
+		}
+	}
+	
+	/* Search Result: Ghost */
+	.MjjYud:not(:has(div)) { display:none; }
+	/* Search Result: Bounding Box */
+	.tF2Cxc.asEBEc { 
+		background:var(--base-2);
+		padding: 1rem; 
+		margin: 1rem;
+		border-radius: 6px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--base-5);
+	}
+	
+	/* Search Result: Domain */
+	span.VuuXrf { color: var(--domain); }
+	
+	/* Search Result: Domain Subtitle */
+	cite { color: var(--domain-subtitle); }
+	/* Search Result: Domain Subtitle Extension */
+	span.ylgVCe.ob9lvb { color: var(--domain-subtitle-ext); }
+	/* Search Result: Domain Subtitle Button (More Info, Veritcal Dots)  */
+	span.xTFaxe { color: var(--purp-subtle);}
+	
+	/* Search Result: Link Text */
+	a { color: var(--link); }
+	a:visited { color: var(--link-visited); }
+	
+	/* Search Result: Date */
+	span.YrbPuc { color: var(--date); }
+	
+	/* Search Result: Context */
+	.A9Y9g {
+		flex: 1 1 100%;
+		min-width: 0;
+	}
+	
+	/* Footer */
+	.c93Gbe,
+	#sfooter { display: none; }
+}
+

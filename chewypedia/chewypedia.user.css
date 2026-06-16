@@ -1,0 +1,177 @@
+/* ==UserStyle==
+@name           chewypedia
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Wikipedia
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewypedia/chewypedia.user.css
+==/UserStyle== */
+
+@-moz-document domain("wikipedia.org") {
+	/* Insert code here... */
+	@media screen and (min-width: 1120px) {
+		.mw-body {
+			display: grid;
+			grid-template: none;
+			/* grid-template: min-content min-content min-content 1fr / minmax(0,59.25rem) min-content; */
+			grid-template-areas: "titlebar-cx ." "titlebar columnEnd" "toolbar columnEnd" "content columnEnd";
+		}
+	}
+
+	@media screen {
+		:root {
+			/* chewy variables */
+			/* Colors */
+			--base-0: #03030b;
+			--base-1: #040512;
+			--base-2: #060616;
+			--base-3: #090a24;
+			--base-4: #0b0c2d;
+			--base-5: #141337;
+			--base-6: #2d2857;
+
+			--purp-dark: #4e4581;
+			--purp-subtle: #806fc0;
+			--purp-indigo-deep: #6161a3;
+			--purp-indigo: #7171d3;
+			--purp-fav: #7408cf;
+			--purp-neon: #7408ff;
+			--purp-bright: #b66ffd;
+			--purp-white: #b399ff;
+
+			--blue-cornflower: #5f95fa;
+			--blue-cyan: #43cfea;
+			--blue: #87afff;
+			--blue-electric: #66ccff;
+
+			--cool-white-00: #bccfff;
+			--cool-white-0: #cad6ff;
+			--cool-white-1: #e8e0ff;
+
+			/* Wikipedia variables */
+			/* Page Text */
+			--color-base: var(--cool-white-0);
+			--color-neutral: var(--cool-white-00);
+			/* Page and Section Titles */
+			--color-emphasized: var(--cool-white-1);
+			/* Unvisited Link */
+			--color-progressive: var(--blue-cornflower);
+			--color-progressive--hover: var(--blue-electric);
+			/* Visited Link */
+			--color-visited: var(--purp-neon);
+			--color-visited--hover: var(--purp-bright);
+			/* Page Background */
+			--background-color-base: var(--base-0);
+			/* Figure Caption Background */
+			--background-color-neutral-subtle: var(--base-0);
+			--background-color-neutral: var(--base-2);
+			--background-color-interactive-subtle: var(--base-2);
+			/* Interactive Button */
+			--background-color-interactive: var(--base-2);
+			/* Figure Border */
+			--border-color-base: var(--base-4);
+			--border-color-subtle: var(--base-4);
+		}
+
+		figure[typeof~="mw:File/Thumb"] > :not(figcaption) .mw-file-element:not(.mw-broken-media),
+		figure[typeof~="mw:File/Frame"] > :not(figcaption) .mw-file-element:not(.mw-broken-media) {
+			background-color: var(--cool-white-0);
+			/* Figure Content Background */
+			color: var(--color-base-fixed, #202122);
+		}
+	}
+
+	.mw-parser-output .navbox-title {
+		background-color: var(--base-2);
+	}
+
+	.mw-parser-output .navbox,
+	.mw-parser-output .navbox-subgroup {
+		background-color: var(--base-1);
+	}
+
+	.mw-parser-output .navbox {
+		border: 1px solid var(--base-4);
+	}
+
+	.mw-parser-output .navbox-abovebelow,
+	.mw-parser-output .navbox-group,
+	.mw-parser-output .navbox-subgroup .navbox-title {
+		background-color: var(--base-2);
+	}
+
+	.mw-parser-output tr + tr > .navbox-abovebelow,
+	.mw-parser-output tr + tr > .navbox-group,
+	.mw-parser-output tr + tr > .navbox-image,
+	.mw-parser-output tr + tr > .navbox-list {
+		border-top: 2px solid var(--base-4);
+	}
+
+	.mw-parser-output .navbox-list {
+		border-color: var(--base-4);
+	}
+
+	.mw-parser-output .navbox-even {
+		background-color: var(--base-2);
+	}
+
+	.mw-parser-output .ambox {
+		border: 1px solid var(--base-4);
+		border-left: 10px solid var(--blue-cornflower);
+		background-color: var(--base-2);
+	}
+
+	.infobox {
+		border: 1px solid var(--base-4);
+		color: var(--cool-white-0);
+	}
+
+	.mw-parser-output .ib-chembox td,
+	.mw-parser-output .ib-chembox th {
+		border: 1px solid var(--base-4);
+	}
+
+	figure[typeof~="mw:File"].mw-halign-center,
+	figure[typeof~="mw:File/Frameless"].mw-halign-center {
+		background-color: var(--cool-white-0);
+	}
+
+	.infobox .infobox-header,
+	.infobox .infobox-subheader,
+	.infobox .infobox-image,
+	.infobox .infobox-full-data,
+	.infobox .infobox-below,
+	.mw-parser-output .sidebar-title,
+	.mw-parser-output .sidebar-title-with-pretitle,
+	.mw-parser-output .sidebar-list-title {
+		background-color: var(--base-4) !important;
+	}
+
+	.mw-parser-output .sidebar {
+		border: 1px solid var(--base-4) !important;
+	}
+
+	.mw-parser-output .sidebar-collapse .sidebar-above,
+	.mw-parser-output .sidebar-collapse .sidebar-below {
+		border-top: 1px solid var(--base-4);
+		border-bottom: 1px solid var(--base-4);
+	}
+
+	tr.sortbottom,
+	tr.static-row-header {
+		background-color: var(--base-1) !important;
+	}
+
+	.infobox th[style*="background"],
+	.infobox td[style*="background"] {
+		background-color: var(--base-3) !important;
+	}
+
+	.infobox td[style*="border"] {
+		border: 1px solid var(--base-4) !important;
+	}
+}

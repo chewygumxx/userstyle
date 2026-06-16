@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           Arch Linux - Manual Pages
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Increases the maximum width of the main content from 80ch to 100ch
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/arch_manpages/arch_manpages.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://man.archlinux.org/") {
+	/* Manual content section */
+	#content-left {
+		max-width: 100ch;
+	}
+}
