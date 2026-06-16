@@ -1,4 +1,15 @@
+/*==UserStyle==
+@name           chewytube
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's YouTube
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
 
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewytube/chewytube.user.css
+==/UserStyle==*/
 
 @-moz-document domain("youtube.com") {
 	:root {
