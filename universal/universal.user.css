@@ -10,6 +10,7 @@
 @supportURL     https://github.com/chewygumxx/userstyle/issues
 @updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/universal/universal.user.css
 ==/UserStyle== */
+
 @-moz-document regexp('^.*$') {
     :root {
         --monospace: "AnonymicePro Nerd Font Propo";
