@@ -12,7 +12,7 @@
 | UserStyle                  | Description                                  | Install                                |
 |----------------------------|----------------------------------------------|----------------------------------------|
 | -\*- Universal -*-         | Targets all pages                            | [![stylus-button][]][universal]        |
-| Arch Linux - Manual Pages  | Increases page width from 80ch to 100ch      | [![stylus-button][]][arch_manpages]    |
+| Arch Linux - Manual Pages  | Increase page width from 80ch to 100ch       | [![stylus-button][]][arch_manpages]    |
 | chewyaude                  | chewygumxx's Claude AI                       | [![stylus-button][]][chewyaude]        |
 | chewyivitai                | chewygumxx's Civitai                         | [![stylus-button][]][chewyivitai]      |
 | chewyoogle                 | (WIP) chewygumxx's Google                    | [![stylus-button][]][chewyoogle]       |
