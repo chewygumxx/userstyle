@@ -4,7 +4,7 @@ Styleyou, Styleme, Stylus ^-^
 
 | UserStyle         | Description                           | Install                                              |
 |-------------------|---------------------------------------|------------------------------------------------------|
-| -*- Universal -*- | Targets all pages, provides variables | [![Install directly with Stylus][stylus]][universal] |
+| -\*- Universal -*- | Targets all pages, provides variables | [![Install directly with Stylus][stylus]][universal] |
 
 
 
