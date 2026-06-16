@@ -1,0 +1,186 @@
+/*==UserStyle==
+@name           Mozilla Extensions Library
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Colourscheme too desperate
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/moz_ext_library/moz_ext_library.user.css
+==/UserStyle==*/
+
+@-moz-document domain("addons.mozilla.org") {
+    :root {
+        --base-0: #03030b;
+        --base-1: #040512;
+        --base-2: #060616;
+        --base-3: #090a24;
+        --base-4: #0b0c2d;
+        --base-5: #141337;
+        --base-6: #2d2857;
+
+        --purp-dark: #4e4581;
+        --purp-subtle: #806fc0;
+        --purp-indigo-deep: #6161a3;
+        --purp-indigo: #7171d3;
+        --purp-favourite: #7408cf;
+        --purp-neon: #7408ff;
+        --purp-bright: #b66ffd;
+        --purp-white: #b399ff;
+
+        --blue-cornflower: #5f95fa;
+        --blue-cyan: #43cfea;
+        --blue: #87afff;
+        --blue-electric: #66ccff;
+
+        --cool-white-8: #cad6ff;
+        --cool-white-9: #e8e0ff;
+
+
+        --radius-1: 2px;
+        --radius-2: 4px;
+        --radius-3: 6px;
+        --radius-4: 8px;
+
+        --border-1: 1px solid var(--base-4);
+        --border-2: 1px solid var(--base-5);
+
+        --content: var(--cool-white-8);
+
+        --domain: var(--purp-indigo);
+        --domain-subtitle: var(--purp-indigo);
+        --domain-subtitle-ext: var(--purp-indigo-deep);
+
+        --link: var(--blue-electric);
+        --link-visited: var(--purp-neon);
+
+        --date: var(--purp-indigo-deep);
+    }
+
+    /* Main content container */
+    .Page-content {
+        background: var(--base-0);
+    }
+
+    .Header {
+        background: var(--base-1);
+        border-bottom: var(--border-1);
+
+        .Header-authenticate-button,
+        .Header-authenticate-button:link,
+        .Header-blog-link,
+        .Header-blog-link:link,
+        .Header-developer-hub-link,
+        .Header-developer-hub-link:link,
+        .Header-extension-workshop-link,
+        .Header-extension-workshop-link:link {
+            color: var(--blue-cornflower);
+            font-size: 14px;
+            font-weight: 400;
+            padding-top: 4px;
+            text-decoration: none;
+            vertical-align: baseline;
+        }
+    }
+
+    :is(.Card-contents, .Card-header, .Card-footer) {
+        background: var(--base-1);
+        color: var(--cool-white-8);
+    }
+
+    .ShowMoreCard-contents::after {
+        background: linear-gradient(hsla(0, 0%, 100%, 0), var(--base-6));
+        bottom: 0;
+        content: "";
+        height: 20px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .Search {
+        :is(.SearchContextCard, .SearchFilters, .SearchResults) {
+            .Card-contents {
+                border: var(--border-1);
+                border-radius: var(--radius-2);
+            }
+
+            .Card-header {
+                display: none;
+            }
+        }
+
+        /* 21398 results found.... */
+        .SearchContextCard-header {
+            color: var(--blue);
+        }
+
+        .SearchFilters {
+            .SearchFilters-label {
+                color: var(--cool-white-9);
+                margin-bottom: 0.3rem;
+            }
+
+            .Select {
+                color: var(--cool-white-8);
+                background: var(--base-2) url(/static-frontend/865634cee658e2e0ae76af2078344137.svg) no-repeat calc(100% - 10px) 50%;
+
+                border: var(--border-1);
+                border-radius: var(--radius-1);
+
+                padding: 10px;
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+
+    .Card-contents ul > li {
+        background: var(--base-1);
+        padding: 30px;
+
+            .SearchResult-link {
+                color: var(--link) !important;
+            }
+
+            /* User Count */
+            .SearchResult--meta-section {
+                color: var(--purp-indigo);
+            }
+
+            .Badge {
+                border: var(--border-2);
+
+                .Badge-link {
+                    color: var(--purp-indigo);
+                }
+            }
+
+            .SearchResult-summary {
+                margin: 0.5rem 0rem;
+                color: var(--cool-white-8);
+            }
+    }
+
+            .SearchResult-link {
+                color: var(--link);
+            }
+
+    @media only screen and (min-width: 720px) {
+        .AddonsCard--horizontal .Card-contents {
+            background: var(--base-9);
+        }
+    }
+
+    .Footer {
+        background: var(--base-1);
+        color: var(--cool-white-8);
+        border-top: 1px solid var(--base-4);
+
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

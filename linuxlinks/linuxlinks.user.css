@@ -1,0 +1,22 @@
+/*==UserStyle==
+@name           linuxlinks
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Temporal displacement to the present
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/linuxlinks/linuxlinks.user.css
+==/UserStyle==*/
+
+@-moz-document domain("linuxlinks.com") {
+    section.site-content.clearfix#content {
+        grid-template-columns: 1fr 100ch 1fr;
+    }
+    
+    #secondary aside{
+        display: none;
+    }
+}

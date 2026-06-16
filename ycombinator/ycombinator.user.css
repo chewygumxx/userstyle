@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           Y Combinator - Hacker News
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Increase width of replies from 80ch to 100ch
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/ycombinator/ycombinator.user.css
+==/UserStyle== */
+
+@-moz-document domain("ycombinator.com") {
+    .commtext.c00 {
+        width: 100ch;
+    }
+}

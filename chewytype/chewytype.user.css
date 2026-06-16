@@ -1,0 +1,196 @@
+/*==UserStyle==
+@name           chewytype
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Typing Practice
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewytype/chewytype.user.css
+==/UserStyle==*/
+
+@-moz-document domain("keybr.com") {
+	:root {
+		--base-0: #03030b;
+		--base-1: #040512;
+		--base-2: #060616;
+		--base-3: #090a24;
+		--base-4: #0b0c2d;
+		--base-5: #141337;
+		--base-6: #2d2857;
+		
+		--red:      #f53c3c;
+		--red-pale: #eb4d4b;
+		
+		--green: #0fe192;
+		
+		--blue-cornflower:  #5f95fa;
+		--blue-cyan:        #43cfea;
+		--blue-pale:	    #7fb5ff;
+		--blue-light:       #87afff;
+		--blue-electric:    #66ccff;
+		
+		--purp-dark:        #4e4581;
+		--purp-subtle:      #806fc0;
+		--purp-indigo-deep: #6161a3;
+		--purp-indigo:      #7171d3;
+		--purp-reg:         #7408c4;
+		--purp-neon:        #7408ff;
+		--purp-pale:        #8874ed;
+		--purp-bright:      #b66ffd;
+		--purp-white:       #b399ff;
+		
+		--cool-white-0: #cad6ff;
+		--cool-white-1: #e8e0ff;
+
+	}
+	
+	@media (prefers-color-scheme: dark) { html[data-color="system"] {
+		--primary-d2: var(--base-2); /* Default: #4d4d4d */  
+		--primary-d1: var(--base-2); /* Default: #404040 */  
+		--primary:    var(--base-0); /* Default: #333    */     
+		--primary-l1: var(--base-1); /* Default: #2e2e2e */  
+		--primary-l2: var(--base-1); /* Default: #2b2b2b */  
+		
+		--secondary-d1: var(--cool-white-0); /* Default: #b8b3b3 */  
+		--secondary:    var(--cool-white-0); /* Default: #9f9999 */     
+		--secondary-l1: var(--cool-white-0); /* Default: #867f7f */  
+		--secondary-l2: var(--cool-white-0); /* Default: #6c6666 */  
+		--secondary-f1: var(--cool-white-0); /* Default: #898585 */  
+		--secondary-f2: var(--cool-white-0); /* Default: #747070 */  
+		
+		--accent-d2: var(--); /* Default: #524d4d */  
+		--accent-d1: var(--); /* Default: #5f5a5a */  
+		--accent:    var(--purp-reg); /* Default: #6c6666 */     
+		--accent-l1: var(--); /* Default: #797272 */  
+		--accent-l2: var(--); /* Default: #867f7f */  
+		
+		--error-d1: var(--red); /* Default: #b75c5c */  
+		--error:    var(--red); /* Default: #9b4545 */     
+		--error-l1: var(--red); /* Default: #783535 */  
+		
+		--shadow-color:   var(--); /* Default: #00000088 */  
+		--slow-key-color: var(--); /* Default: #8c1818 */  
+		--fast-key-color: var(--); /* Default: #448154 */  
+		--effort-color:   var(--); /* Default: #2d4a86 */    
+		
+		--textinput__color:          var(--purp-subtle); /* Default: #9f9999 */ 
+		--textinput--hit__color:     var(--purp-dark); /* Default: #747070 */ 
+		--textinput--miss__color:    var(--red); /* Default: #9b4545 */
+		--textinput--special__color: var(--purp-dark); /* Default: #696666 */
+		
+		--Name-color:         var(--purp-pale); /* Default: #d0cece */   
+		--Value-color:        var(--blue-pale); /* Default: #867f7f */         
+		--Value--more__color: var(--green); /* Default: #2a7e21 */  
+		--Value--less__color: var(--red); /* Default: #a1464e */  
+		
+		--Chart-speed__color:      var(--); /* Default: #517460 */        
+		--Chart-accuracy__color:   var(--); /* Default: #914331 */     
+		--Chart-complexity__color: var(--); /* Default: #705282 */   
+		--Chart-threshold__color:  var(--); /* Default: #834c67 */    
+		--Chart-hist-h__color:     var(--); /* Default: #495074 */       
+		--Chart-hist-m__color:     var(--); /* Default: #743939 */       
+		--Chart-hist-r__color:     var(--); /* Default: #723a74 */       
+		
+		--KeyboardKey-pointer__color: var(--); /* Default: #4ba0f2 */  
+		--pinky-zone-color:       var(--purp-dark); /* Default: #617a58 */            
+		--ring-zone-color:        var(--purp-indigo-deep); /* Default: #76772d */             
+		--middle-zone-color:      var(--purp-indigo); /* Default: #977831 */           
+		--left-index-zone-color:  var(--purp-reg); /* Default: #5b6d66 */       
+		--right-index-zone-color: var(--purp-pale); /* Default: #835d67 */      
+		--thumb-zone-color:       var(--purp-subtle); /* Default: #854b44 */            
+		
+		--purp-dark:        #4e4581;
+		--purp-subtle:      #806fc0;
+		--purp-indigo-deep: #6161a3;
+		--purp-indigo:      #7171d3;
+		--purp-reg:         #7408c4;
+		--purp-neon:        #7408ff;
+		--purp-pale:        #8874ed;
+		--purp-bright:      #b66ffd;
+		--purp-white:       #b399ff;
+		--syntax-keyword: var(--); /* Default: #5991cd */  
+		--syntax-string:  var(--); /* Default: #72b172 */   
+		--syntax-number:  var(--); /* Default: #b281d3 */   
+		--syntax-comment: var(--); /* Default: #9f8484 */  
+	}}
+
+	
+	:where(html), [data-preview-theme] {
+		--background-color: var(--primary);
+		--background-image: none;
+		--text-color: var(--secondary);
+		--text-color-f1: #a61212;
+		--text-color-f2: var(--secondary-f2);
+		--separator-color: var(--primary-d1);
+		--separator-border: 1px solid var(--separator-color);
+		--textinput__color: var(--text-color);
+		--textinput--special__color: var(--text-color-f2);
+		--textinput--hit__color: var(--text-color-f2);
+		--textinput--miss__color: var(--error);
+		--textinput-cursor__color: var(--background-color);
+		--textinput-cursor__background-color: var(--textinput__color);
+		--LessonKey--included__color: var(--secondary-d1);
+		--LessonKey--included__background-color: transparent;
+		--LessonKey--included__outline-color: transparent;
+		--LessonKey--excluded__color: var(--secondary-d1);
+		--LessonKey--excluded__background-color: var(--primary-d1);
+		--LessonKey--excluded__outline-color: transparent;
+		--LessonKey--uncalibrated__color: var(--secondary-d1);
+		--LessonKey--uncalibrated__background-color: var(--primary-d1);
+		--LessonKey--uncalibrated__outline-color: transparent;
+		--LessonKey--focused__outline-color: var(--secondary-l2);
+		--LessonKey--forced__outline-color: transparent;
+		--LessonKey--current__outline-color: var(--secondary-l2);
+		--Keyboard-frame__color: var(--primary-d1);
+		--KeyboardKey-button__color: var(--primary);
+		--KeyboardKey-button--depressed__color: var(--secondary);
+		--KeyboardKey-symbol__color: var(--secondary);
+		--KeyboardKey-symbol--depressed__color: var(--primary);
+		--KeyboardKey-symbol--dead__color: #c00;
+		--KeyboardKey-symbol--ligature__color: #66f;
+		--Chart-frame__color: var(--primary-d2);
+		--DailyGoal-bar__color: var(--primary-l2);
+		--DailyGoal-frame__color: var(--primary-d2);
+		--Calendar-caption__background-color: var(--primary-d1);
+		--Calendar-headerCell__background-color: var(--primary-d2);
+		--Calendar-cell--background-color: var(--primary-l1);
+		--Player__background-color: var(--primary);
+		--Player--me__background-color: var(--primary-d1);
+		--Player--finished__background-color: transparent;
+		--PlayerDetails__color: var(--secondary);
+		--PlayerDetails__background-color: var(--primary-l1);
+		--Name-color: var(--secondary-l2);
+		--Value-color: var(--secondary-d1);
+		--Value--more__color: #2a7e21;
+		--Value--less__color: #a1464e;
+		--Button__color: var(--primary-l2);
+		--Button__background-color: var(--accent);
+		--Button--focused__color: var(--primary-l2);
+		--Button--focused__background-color: var(--accent-l2);
+		--MenuItem__color: var(--primary-l2);
+		--MenuItem__background-color: var(--accent-l1);
+		--MenuItem--hover__color: var(--primary-l2);
+		--MenuItem--hover__background-color: var(--accent-l2);
+		--MenuItem--selected__color: var(--primary-l2);
+		--MenuItem--selected__background-color: var(--accent-d1);
+		--TextField__color: var(--secondary);
+		--TextField__background-color: var(--primary-l1);
+		--TextField__border-color: var(--primary-d1);
+		--TextField--focused__color: var(--secondary);
+		--TextField--focused__background-color: var(--primary-l2);
+		--TextField--focused__border-color: var(--primary-d2);
+		--Popup__color: var(--text-color);
+		--Popup__background-color: var(--background-color);
+		--Popup__box-shadow: 0 0.5rem 3rem var(--shadow-color);
+		--Popup--small__box-shadow: 0 0rem 1rem var(--shadow-color);
+		--Spotlight__background-color: #00000033;
+		--Spotlight__border-color: var(--secondary-l2);
+		--Spotlight-marker__shadow-color: var(--shadow-color);
+		--Surface__box-shadow: none;
+		--Surface__backdrop-filter: none;
+		scrollbar-color: var(--secondary) var(--primary);
+	}
+}
