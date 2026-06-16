@@ -1,0 +1,309 @@
+
+
+@-moz-document domain("youtube.com") {
+	:root {
+		/* chewy variables */
+		
+		/* Colors */
+		--base-0: #03030b;
+		--base-1: #040512;
+		--base-2: #060616;
+		--base-3: #090a24;
+		--base-4: #0b0c2d;
+		--base-5: #141337;
+		--base-6: #2d2857;
+		
+		--purp-dark:        #4e4581;
+		--purp-subtle:      #806fc0;
+		--purp-indigo-deep: #6161a3;
+		--purp-indigo:      #7171d3;
+		--purp-neon:        #7408ff;
+		--purp-bright:      #b66ffd;
+		--purp-white:       #b399ff;
+		
+		--blue-cornflower:  #5f95fa;
+		--blue-cyan:        #43cfea;
+		--blue:             #87afff;
+		--blue-electric:    #66ccff;
+		
+		--cool-white-0: #cad6ff;
+		--cool-white-1: #e8e0ff;
+		
+		/* Text */
+		
+		--text-title-watching: var(--cool-white-1);
+		--text-subscribe: var(--cool-white-0);
+		--text-channel: var(--cool-white-0);
+		--text-button: var(--cool-white-0);
+		
+		/* Size */
+		--title-size: 14px;
+		--metadata-size: 12px;
+		
+		/* Size: Border Radius */
+		--radius-0: 0px;
+		--radius-1: 2px;
+		--radius-2: 4px; 
+		--radius-3: 6px; 
+		--radius-4: 8px;
+		
+		--radius-thumbnail:    var(--radius-1); /* Default:    12px */
+		--radius-avatar:       var(--radius-1); /* Default:    50%  */
+		--radius-button-small: var(--radius-1); /* Default:     8px */
+		--radius-button-large: var(--radius-2); /* Default: 18-24px */
+		--radius-search-bar:   var(--radius-2); /* Default:    40px */
+		--radius-player:       var(--radius-2); /* Default:    12px */
+		
+	}
+	
+	button:not(.ytSearchboxComponentSearchButton), .ytThumbnailViewModelLarge, input, select, textarea, div, img, *::before, *::after { border-radius: var(--radius-1) !important; }
+	
+	button:not(.ytSearchboxComponentSearchButton) { background: none !important; }
+	
+	.yt-spec-button-shape-next.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading-trailingwyt-spec-button-shape-next--enable-backdrop-filter-experiment :is(span) { color: var(--text-button) !important; }
+	
+	#subscribe-button-shape > button:nth-child(1) > div:nth-child(1) > span:nth-child(1) { color: var(--text-subscribe); }
+	h1.ytd-watch-metadata { color: var(--text-title-watching); }
+	ytd-channel-name.style-scope:nth-child(2) > div:nth-child(1) > div:nth-child(1) > yt-formatted-string:nth-child(1) > a:nth-child(1) { color: var(--text-channel); }
+    
+    ytd-app[mini-guide-visible] ytd-page-manager.ytd-app {
+        --ytd-mini-guide-width: 0px;
+    }
+	
+	:is(#voice-search-button,
+		[aria-label="Create"],
+		#sponsor-button
+	) { display: none !important; }
+	
+	ytd-app, #guide { background-color: var(--base-0); }
+	#frosted-glass.with-chipbar.ytd-app { 
+		background-color: var(--base-1);
+		border-bottom: 1px solid var(--base-5);
+	}
+	
+	#masthead > #container.ytd-masthead {
+		display: grid;
+		grid-template-columns: 200px minmax(30rem,1fr) minmax(0px,200px) 40px; 
+	}
+	
+	/* Search Bar */
+	.ytSearchboxComponentHost { margin-left: 0px; }
+	.ytSearchboxComponentInputBox {
+		background-color: var(--base-1);
+		border-style: solid;
+		border-width: 1px !important;
+		border-color: var(--base-5);
+		/* border-right: 1px solid var(--base-4) !important; */
+		border-right: 0;
+		border-radius: var(--radius-search-bar);
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		box-shadow: none;
+		
+		padding: 0 4px 0 16px;
+		margin-left: 0px;
+		
+		position: relative;
+		align-items: center;
+		display: flex;
+		flex: 1;
+		cursor: text;
+		
+		::placeholder { color: var(--purp-dark); }
+	}
+	.ytSearchboxComponentSearchButton {
+		border: 1px solid var(--base-5);
+		background-color: var(--base-1);
+		width: 64px;
+		border-radius: var(--radius-search-bar);
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		-moz-box-pack: center;
+		justify-content: center;
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		color: var(--purp-neon);
+	}
+	/* Search icon that renders inside the textarea when typing. DISGOOSTAN */
+	.ytSearchboxComponentInnerSearchIcon { display: none; }
+	
+	
+	/* Avatar/Profile Picture */
+	yt-img-shadow { border-radius: var(--radius-avatar) !important; }
+	
+	/* Button */
+	.yt-spec-button-shape-next--size-m {
+		padding: 0 16px;
+		height: 34px;
+		font-size: 14px;
+		line-height: 36px;
+		border-radius: var(--radius-button-large);
+	}
+	
+	/* Button: Notification Bell */
+	yt-icon-button.ytd-notification-topbar-button-renderer {
+		height: 34px;
+		width: 34px;
+	}
+	yt-icon-button.ytd-masthead, ytd-topbar-menu-button-renderer.ytd-masthead, ytd-notification-topbar-button-renderer.ytd-masthead {
+		height: 34px;
+		width: 34px;
+		&:hover {
+			background-color: var(--yt-spec-10-percent-layer);
+			border-radius: var(--radius-button-large);
+		}
+	}
+	
+	/* Mini Sidebar */
+	ytd-mini-guide-renderer.style-scope { display: none; }
+	
+	ytd-page-manager { margin-right: 40px; }
+	
+	/* Feed Filter Buttons */
+    ytd-rich-grid-renderer.style-scope > div#header {
+        display: none;
+    }
+    #frosted-glass.with-chipbar.ytd-app {
+        height: 60px;
+    }
+	.ytChipShapeChip {
+		position: relative;
+		-moz-box-align: center;
+		align-items: center;
+		border-radius: var(--radius-button-small);
+		/* display: -moz-inline-box; */
+		display: inline-flex;
+		height: 32px;
+		min-width: 12px;
+		white-space: nowrap;
+		font-family: "Roboto","Arial",sans-serif;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-weight: 500;
+		&.ytChipShapeInactive {
+			color: var(--cool-white-0);
+			border: 1px solid var(--base-4);
+			background-color: var(--base-2);
+		}
+		&.ytChipShapeActive {
+			color: var(--cool-white-1);
+			border: 1px solid var(--base-5);
+			background-color: var(--base-5);
+		}
+	}
+	
+		
+	/* Homepage Card/Item */
+	ytd-rich-grid-row,
+	#contents > ytd-rich-grid-row { display: contents !important; }
+	ytd-rich-section-renderer { display: none; }
+	ytd-rich-grid-renderer { 
+		--ytd-rich-grid-posts-per-row: 5 !important;
+		--ytd-rich-grid-items-per-row: 5 !important;
+	}
+	ytd-rich-item-renderer > #content > yt-lockup-view-model > div.yt-lockup-view-model {
+		
+		/* Image/Preview */
+		a.yt-lockup-view-model__content-image yt-thumbnail-view-model {
+			border-radius: var(--radius-thumbnail);
+		}
+		
+		/* Avatar */
+		.yt-spec-avatar-shape__image { border-radius: var(--radius-avatar); }
+		
+		/* Text: Title */
+		.yt-lockup-metadata-view-model__text-container > h3 > a.yt-lockup-metadata-view-model__title { 
+			color: var(--cool-white-1);
+			font-family: "Roboto","Arial",sans-serif;
+			font-weight: 500;
+			
+			
+			font-size:   1rem;
+			line-height: calc(1.5 * var(--title-size));
+			max-height:  calc(4.5 * var(--title-size)); 
+			
+			overflow:      hidden;
+			text-overflow: ellipsis;
+			white-space:   normal;
+			
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+		}
+		
+		/* Text: Other Metadata */
+		.yt-content-metadata-view-model__metadata-text {
+			color: var(--purp-subtle);
+			font-family: "Roboto","Arial",sans-serif;
+			
+			font-size:   1rem;
+			line-height: var(1.5 * var(--metadata-size));
+			max-height:  var(4.5 * var(--metadata-size));
+			
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		
+	}
+	
+	
+	/* Video Player */
+	ytd-watch-flexy[rounded-player] #ytd-player.ytd-watch-flexy {
+		overflow: hidden;
+		border-radius: var(--radius-player); /* Default: 12px */
+	} 
+	/* Video Player: Top and bottom border gradient effects */
+	.yt-gradient-top,
+	.yt-gradient-bottom { display: none; }
+	
+	/* Video Player: Fullscreen - Remove right margin */
+	ytd-page-manager { margin-right: 0px; }
+	
+	/* Suggested Cards */
+	.ytThumbnailViewModelMedium {
+		border-radius: var(--radius-thumbnail); /* Default: 8px */
+	}
+	
+	/* Video Channel */
+	#avatar.ytd-video-owner-renderer {
+		border-radius: var(--radius-avatar); /* Default: 50% */
+	}
+	
+	/* Video Description */
+	#description-inner.ytd-watch-metadata {
+		border-radius: var(--radius-desc); /* Default: 12px */
+		margin: 0px;
+	}
+	
+	.ytLockupMetadataViewModelStandard.ytLockupMetadataViewModelRichGridLegacyTypography .ytLockupMetadataViewModelTitle {
+			color: var(--cool-white-1);
+			font-family: "Roboto","Arial",sans-serif;
+			font-weight: 500;
+			
+			
+			font-size:   var(--title-size);
+			line-height: calc(1.5 * var(--title-size));
+			max-height:  calc(4.5 * var(--title-size)); 
+			
+			overflow:      hidden;
+			text-overflow: ellipsis;
+			white-space:   normal;
+			
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+	}
+	
+.ytContentMetadataViewModelMediumText .ytContentMetadataViewModelMetadataText {
+			color: var(--purp-subtle);
+			font-family: "Roboto","Arial",sans-serif;
+			
+			font-size:   var(--metadata-size);
+			line-height: var(1.5 * var(--metadata-size));
+			max-height:  var(4.5 * var(--metadata-size));
+			
+			white-space: nowrap;
+			text-overflow: ellipsis;
+	}
+}

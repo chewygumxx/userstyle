@@ -8,7 +8,9 @@ Styleyou, Styleme, Stylus ^-^
 | Documentation: Chezmoi | Chezmoi online documentation pages | [![Install directly with Stylus][]][doc_chezmoi] |
 | Arch Linux - Manual Pages | Increases the maximum width of the main content from 80ch to 100ch | [![Install directly with Stylus][]][arch_manpages] |
 | chewyoogle | chewygumxx's Google | [![Install directly with Stylus][]][chewyoogle] |
-| chewypedia | chewygumxx's Google | [![Install directly with Stylus][]][chewypedia] |
+| chewypedia | chewygumxx's Wikipedia | [![Install directly with Stylus][]][chewypedia] |
+| chewyscloud | chewygumxx's SoundCloud | [![Install directly with Stylus][]][chewyscloud] |
+| chewytube | chewygumxx's YouTube | [![Install directly with Stylus][]][chewytube] |
 
 
 
@@ -18,3 +20,4 @@ Styleyou, Styleme, Stylus ^-^
 [arch_manpages]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/arch_manpages/arch_manpages.user.css>
 [chewyoogle]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyoogle/chewyoogle.user.css>
 [chewypedia]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewypedia/chewypedia.user.css>
+[chewytube]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewytube/chewytube.user.css>

@@ -1,0 +1,16 @@
+/*==UserStyle==
+@name           chewyscloud
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Soundcloud
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyscloud/chewyscloud.user.css
+==/UserStyle==*/
+
+@-moz-document domain("soundcloud.com") {
+	.image__rounded { border-radius: 4px; }
+}
