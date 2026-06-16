@@ -2,9 +2,9 @@
 
 Styleyou, Styleme, Stylus ^-^
 
-| UserStyle         | Description                           | Install                                                                 |
-|-------------------|---------------------------------------|-------------------------------------------------------------------------|
-| -*- Universal -*- | Targets all pages, provides variables | [![Install directly with Stylus][stylus]](universal/universal.user.css) |
+| UserStyle         | Description                           | Install                                                                                     |
+|-------------------|---------------------------------------|---------------------------------------------------------------------------------------------|
+| -*- Universal -*- | Targets all pages, provides variables | [![Install directly with Stylus][stylus]](raw/refs/heads/main/universal/universal.user.css) |
 
 
 
