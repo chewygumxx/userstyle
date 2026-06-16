@@ -1,0 +1,182 @@
+/* ==UserStyle==
+@name           Documentation: Chezmoi
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Stylisation for the chezmoi online documentation pages
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/doc_chezmoi/doc_chezmoi.user.css
+==/UserStyle== */
+
+@-moz-document domain("chezmoi.io") {
+  	:root {
+		--base-0: #03030b;
+		--base-1: #040512;
+		--base-2: #060616;
+		--base-3: #090a24;
+		--base-4: #0b0c2d;
+		--base-5: #141337;
+		--base-6: #2d2857;
+		
+		--purp-dark:        #4e4581;
+		--purp-subtle:      #806fc0;
+		--purp-indigo-deep: #6161a3;
+		--purp-indigo:      #7171d3;
+        --purp-favourite:   #7408cf;
+		--purp-neon:        #7408ff;
+		--purp-bright:      #b66ffd;
+		--purp-white:       #b399ff;
+		
+		--blue-cornflower:  #5f95fa;
+		--blue-cyan:        #43cfea;
+		--blue:             #87afff;
+		--blue-alt:         #5795cf;
+		--blue-electric:    #66ccff;
+		
+		--domain:              var(--purp-indigo);
+		--domain-subtitle:     var(--purp-indigo);
+		--domain-subtitle-ext: var(--purp-indigo-deep);
+		
+		--link: var(--blue-electric);
+		--link-visited: var(--purp-neon);
+		
+		--date: var(--purp-indigo-deep);
+		
+		--cool-white-8: #cad6ff;
+		--cool-white-9: #e8e0ff;
+        
+        --monospace: "Anonymous Pro";
+	}
+
+    body {
+        letter-spacing: 0.01rem;
+        background-color: var(--base-0);
+    
+        p {
+            color: var(--cool-white-8);
+            font-size: 15px;
+        }
+    }
+    
+    .md-header {
+        background-color: var(--base-2);
+        border-bottom: solid 2px var(--base-4);
+    }
+    
+    .md-header__button.md-icon,
+    .md-header__ellipsis span.md-ellipsis,
+    form.md-search__form label.md-search__icon.md-icon, 
+    div.md-search__inner form.md-search__form,
+    .md-source__repository.md-source__repository--active,
+    .md-source__icon.md-icon{
+        color: var(--blue-cornflower);
+    }
+    
+    @media screen and (min-width: 60em) {
+        input.md-search__input::placeholder { color: var(--blue); }
+    }
+    
+    li.md-tabs__item a.md-tabs__link {
+        color: var(--cool-white-8);
+        opacity: 0.9;
+        
+        &:hover {
+            color: var(--cool-white-9);
+        }
+    }
+    
+    li.md-tabs__item.md-tabs__item--active a.md-tabs__link {
+        color: var(--cool-white-9);
+    }
+    
+    ul.md-nav__list {
+        color: var(--blue);
+    }
+    
+    div.md-content h1 {
+        color: var(--blue);
+    }
+    
+    div.md-content article.md-content__inner.md-typeset code {
+        background-color: var(--base-3);
+        color: var(--cool-white-8);
+        
+        border-radius: 0.1rem;
+        border: solid 1px var(--base-4);
+        padding: 0.2rem 0.3rem;
+        margin: 0.15rem 0rem;
+        
+        font-family: var(--monospace);
+        font-size: 14px;
+        font-weight: 550;
+        letter-spacing: 0.1rch;
+    }
+    
+    .md-typeset table:not([class]) {
+        max-width: 95%;
+        margin: 1rem;
+        border: solid 1px var(--base-5);
+    
+        tr {
+            th,td {
+                color: var(--cool-white-8);
+                
+                background: var(--base-1);
+                padding: 0.5rem 0.5rem;
+                padding-left:1.0rem;
+            }
+            
+            th {
+                background: var(--base-2);
+                border-bottom: solid 1px var(--base-5);
+                border-left: solid 1px var(--base-4);
+                
+                font-size: 14px;
+                
+                padding-top: 0.8rem;
+                padding-bottom: 0.5rem;
+            }
+            
+            td {
+                border-left: solid 1px var(--base-4);
+                border-bottom: solid 1px var(--base-3);
+                
+                font-size: 0.8rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.2rem;
+                
+                code {
+                    margin-top: 0.3rem;
+                    font-size: 1.0rem;
+                }
+            }
+        }
+    }
+    
+    .md-typeset table tr td:nth-child(1) {
+        min-width: 15rch;
+    }
+    
+    .md-footer-meta.md-typeset {
+        background-color: var(--base-2);
+        border-top: solid 2px var(--base-4);
+        
+        .md-copyright {
+            color: var(--purp-indigo-deep);
+            
+            .md-copyright__highlight {
+                color: var(--purp-indigo);
+            }
+            
+            a {
+                color: var(--purp-subtle);
+            }
+        }
+        
+    }
+    
+}
+
