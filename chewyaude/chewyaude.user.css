@@ -1,0 +1,23 @@
+/*==UserStyle==
+@name           chewyaude
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Claude AI
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyaude/chewyaude.user.css
+==/UserStyle==*/
+
+@-moz-document domain("claude.ai") {
+    html:where(:not([data-dframe])) .cds-root ::selection {
+        background-color: var(--cds-bg-accent);
+        color: var(--cds-text-accent);
+    }
+    
+    .bg-bg-100, .bg-bg-100\/20 {
+        background-color: #03030b;
+    }
+}

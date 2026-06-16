@@ -1,0 +1,116 @@
+/*==UserStyle==
+@name           Darkened Stylus
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    Darkened Stylus Interface
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/darkened-stylus/darkened-stylus.user.css
+==/UserStyle==*/
+
+@-moz-document regexp('^(moz|chrome)-extension://.*$') {
+    :root {
+        --base-00: #03030b;
+        --base-01: #040512;
+        --base-02: #060616;
+        --base-03: #090a24;
+        --base-04: #0b0c2d;
+        --base-05: #141337;
+        --base-06: #2d2857;
+        --base-07: #3d3470;
+        --base-08: #4e4189;
+        --base-09: #5d4e9e;
+        --base-10: #6b5aaf;
+        --base-11: #7a67bf;
+        --base-12: #8875cc;
+        --base-13: #9684d6;
+        --base-14: #a493de;
+        --base-15: #b1a3e5;
+        --base-16: #bdb3eb;
+        --base-17: #c8c2ef;
+        --base-18: #cad6ff;
+        --base-19: #d3d0f3;
+        --base-20: #dcdaf6;
+        --base-21: #e4e2f8;
+        --base-22: #e8e0ff;
+
+        --new-accent-0: #7fb5ff;
+        --new-accent-1: #8394f6;
+        --new-accent-2: #8874ed;
+        --new-accent-3: #8d53e5;
+        --new-accent-4: #9233dc;
+        --new-accent-5: #7408c4;
+    }
+
+    @media screen,
+    dark {
+        :root {
+            --cmin: var(--base-22);
+            --c00: var(--base-22);
+            --c10: var(--base-20);
+            --c20: var(--base-18);
+            --c30: var(--base-17);
+            --c35: var(--base-16);
+            --c40: var(--base-15);
+            --c45: var(--base-14);
+            --c50: var(--base-13);
+            --c60: var(--base-12);
+            --c65: var(--base-11);
+            --c70: var(--base-10);
+            --c75: var(--base-09);
+            --c80: var(--base-08);
+            --c85: var(--base-07);
+            --c90: var(--base-06);
+            --c95: var(--base-05);
+            --c97: var(--base-03);
+            --c98: var(--base-01);
+            --c99: var(--base-00);
+            --c100: var(--base-00);
+            --cmax: var(--base-00);
+
+            --fg: var(--base-18);
+            --bg: var(--base-00);
+
+            --accent-1: var(--new-accent-0);
+            --accent-2: var(--new-accent-1);
+            --accent-3: var(--new-accent-2);
+            --accent-4: var(--new-accent-3);
+            --accent-5: var(--new-accent-5);
+
+            --input-bg: var(--c95);
+            --gold1: #ffda14;
+            --red1: #dc143c;
+
+            --zebra: rgb(from var(--base-10) r g b / 5%);
+        }
+    }
+
+    body {
+        background: var(--base-00);
+        color: var(--base-18);
+    }
+
+    #header {
+        background: var(--base-01);
+    }
+
+    #header-resizer {
+        color: var(--base-04);
+        background: var(--base-02);
+
+        &::after {
+            border-right: unset;
+            position: absolute;
+        }
+    }
+
+    .dirty #save-button,
+    .dirty #save-button + button {
+        background: linear-gradient(var(--accent-1), var(--accent-3));
+        border-color: var(--accent-5);
+        color: var(--base-00);
+    }
+}

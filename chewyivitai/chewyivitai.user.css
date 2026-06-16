@@ -1,0 +1,35 @@
+/*==UserStyle==
+@name           chewyivitai
+@namespace      https://github.com/chewygumxx/userstyle
+@version        0.0.1
+@description    chewygumxx's Civitai
+@author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
+@license        WTFPL
+
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyivitai/chewyivitai.user.css
+==/UserStyle==*/
+
+@-moz-document domain("civitai.com"), domain("civitai.red") {
+    /* Save to Collection: Popup Container */
+    .m_fd1ab0aa {
+        flex: var(--modal-content-flex, 0 0 30rem);
+        height: var(--modal-content-height, fit-content);
+
+        max-height: var(--modal-content-max-height, calc(100dvh - var(--modal-y-offset)*2));
+        max-width: 100%;
+        overflow-y: auto;
+    }
+
+    /* Save to Collection: Collection Item Container Height-Bounding Parent */
+    html body.dark div div div.m_9df02822.mantine-Modal-root div.m_60c222c7.m_1f958f16.mantine-Modal-inner section.m_fd1ab0aa.m_54c44539.mantine-Modal-content.m_1b7284a3.mantine-Paper-root > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        max-height: none !important;
+    }
+
+    /* Save to Collection: Collection Item Container */
+    div.m_d57069b5:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        display: grid;
+    }
+}
