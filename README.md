@@ -1,6 +1,6 @@
 # chewygumxx's UserStyle Repository
 
-Styleyou, Styleme, Stylus ^-^
+*Styleyou, Styleme, Stylus ^-^*
 
 ## Stylus - UserStyles Manager
 
