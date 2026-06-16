@@ -4,8 +4,8 @@ Styleyou, Styleme, Stylus ^-^
 
 ## Stylus - UserStyles Manager
 
-GitHub Repo: openstyles/stylus
-Firefox Extension: [Extension Page](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+- GitHub Repo: [openstyles/stylus](https://github.com/openstyles/stylus)
+- Firefox Extension: [Extension Page](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
 ## My Personal UserStyles
 
@@ -30,15 +30,17 @@ Firefox Extension: [Extension Page](https://addons.mozilla.org/en-US/firefox/add
 
 [stylus-button]:    <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg>
 [universal]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/universal/universal.user.css> 
-[doc_chezmoi]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/doc_chezmoi/doc_chezmoi.user.css> 
 [arch_manpages]:    <https://raw.githubusercontent.com/chewygumxx/userstyle/main/arch_manpages/arch_manpages.user.css>
+[chewyaude]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyaude/chewyaude.user.css>
+[chewyivitai]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyivitai/chewyivitai.user.css>
 [chewyoogle]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyoogle/chewyoogle.user.css>
 [chewypedia]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewypedia/chewypedia.user.css>
+[chewyscloud]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyscloud/chewyscloud.user.css>
 [chewytube]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewytube/chewytube.user.css>
-[chewyivitai]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyivitai/chewyivitai.user.css>
-[chewyaude]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewyaude/chewyaude.user.css>
-[doc_zshell]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/doc_zshell/doc_zshell.user.css>
 [chewytype]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/chewytype/chewytype.user.css>
+[darkened-stylus]:  <https://raw.githubusercontent.com/chewygumxx/userstyle/main/darkened-stylus/darkened-stylus.user.css>
+[doc_chezmoi]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/doc_chezmoi/doc_chezmoi.user.css> 
+[doc_zshell]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/doc_zshell/doc_zshell.user.css>
 [linuxlinks]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/linuxlinks/linuxlinks.user.css>
 [moz_ext_library]:  <https://raw.githubusercontent.com/chewygumxx/userstyle/main/moz_ext_library/moz_ext_library.user.css>
 [systemd_manpages]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/systemd_manpages/systemd_manpages.user.css>
@@ -46,8 +48,10 @@ Firefox Extension: [Extension Page](https://addons.mozilla.org/en-US/firefox/add
 
 ## UserStyles Adored
 
-| UserStyle           | Description                                                       | Homepage                         |
-|---------------------|-------------------------------------------------------------------|----------------------------------|
-| GitHub Moonlight    | A dark blue GitHub theme                                          | brettm12345/github-moonlight     |
-| Stack Overflow Dark | Dark theme for Stack Overflow & most Stack Exchange network sites | StylishThemes/StackOverflow-Dark |
+| UserStyle           | Description                                                       | Homepage                             |
+|---------------------|-------------------------------------------------------------------|--------------------------------------|
+| GitHub Moonlight    | A dark blue GitHub theme                                          | [brettm12345/github-moonlight][]     |
+| Stack Overflow Dark | Dark theme for Stack Overflow & most Stack Exchange network sites | [StylishThemes/StackOverflow-Dark][] |
 
+[brettm12345/github-moonlight]:     <https://github.com/brettm12345/github-moonlight>
+[StylishThemes/StackOverflow-Dark]: <https://github.com/StylishThemes/StackOverflow-Dark>
