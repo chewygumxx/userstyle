@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           -*- Universal -*-
 @namespace      https://github.com/chewygumxx
-@version        1.0.0
+@version        0.0.1
 @description    Universal CSS variables, rules and declarations
 @author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
 @license        WTFPL
 
-@homepageURL    https://github.com/chewygumxx/
-@supportURL     https://github.com/chewygumxx/
-@updateURL      https://raw.githubusercontent.com/chewygumxx/
+@homepageURL    https://github.com/chewygumxx/userstyle
+@supportURL     https://github.com/chewygumxx/userstyle/issues
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/universal/universal.user.css
 ==/UserStyle== */
 @-moz-document regexp('^.*$') {
     :root {
