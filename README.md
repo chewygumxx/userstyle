@@ -15,10 +15,10 @@
 | Arch Linux - Manual Pages  | Increases page width from 80ch to 100ch      | [![stylus-button][]][arch_manpages]    |
 | chewyaude                  | chewygumxx's Claude AI                       | [![stylus-button][]][chewyaude]        |
 | chewyivitai                | chewygumxx's Civitai                         | [![stylus-button][]][chewyivitai]      |
-| chewyoogle                 | chewygumxx's Google                          | [![stylus-button][]][chewyoogle]       |
+| chewyoogle                 | (WIP) chewygumxx's Google                    | [![stylus-button][]][chewyoogle]       |
 | chewypedia                 | chewygumxx's Wikipedia                       | [![stylus-button][]][chewypedia]       |
 | chewyscloud                | chewygumxx's SoundCloud                      | [![stylus-button][]][chewyscloud]      |
-| chewytube                  | chewygumxx's YouTube                         | [![stylus-button][]][chewytube]        |
+| chewytube                  | (WIP) chewygumxx's YouTube                   | [![stylus-button][]][chewytube]        |
 | chewytype                  | chewygumxx's Typing Practice                 | [![stylus-button][]][chewytype]        |
 | Darkened Stylus            | Darkened Stylus Interface                    | [![stylus-button][]][darkened-stylus]  |
 | Documentation: Chezmoi     | Chezmoi online documentation pages           | [![stylus-button][]][doc_chezmoi]      |
@@ -48,10 +48,10 @@
 
 ## UserStyles Adored
 
-| UserStyle           | Description                                                       | Homepage                             |
-|---------------------|-------------------------------------------------------------------|--------------------------------------|
-| GitHub Moonlight    | A dark blue GitHub theme                                          | [brettm12345/github-moonlight][]     |
-| Stack Overflow Dark | Dark theme for Stack Overflow & most Stack Exchange network sites | [StylishThemes/StackOverflow-Dark][] |
+| UserStyle           | Description                        | Homepage                             |
+|---------------------|------------------------------------|--------------------------------------|
+| GitHub Moonlight    | A dark blue GitHub theme           | [brettm12345/github-moonlight][]     |
+| Stack Overflow Dark | Dark theme for Stack network sites | [StylishThemes/StackOverflow-Dark][] |
 
 [brettm12345/github-moonlight]:     <https://github.com/brettm12345/github-moonlight>
 [StylishThemes/StackOverflow-Dark]: <https://github.com/StylishThemes/StackOverflow-Dark>
