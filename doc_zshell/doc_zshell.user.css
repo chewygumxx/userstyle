@@ -1,7 +1,7 @@
 /*==UserStyle==
 @name           Documentation: Z Shell
 @namespace      https://github.com/chewygumxx/userstyle
-@version        0.0.1
+@version        0.0.2
 @description    Z Shell online and local documentation
 @author         chewygumxx <cgumxx@pm.me> (https://github.com/chewygumxx)
 @license        WTFPL
@@ -15,6 +15,9 @@
     url-prefix("https://zsh.sourceforge.io"),
     url-prefix("file:///usr/share/doc/zsh/html") {
     :root {
+        --monospace:  "AnonymicePro Nerd Font Propo";
+        --sans-serif: "Inter Variable";
+        
 		--base-0: #03030b;
 		--base-1: #040512;
 		--base-2: #060616;
@@ -94,13 +97,19 @@
     
     pre {
       	background:var(--base-2);
+
 		padding: 1rem; 
 		margin: 1rem;
+        margin-bottom: 2rem;
+
 		border-radius: 6px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: var(--base-5);
-        
-        margin-bottom: 2rem;
+    }
+
+    code {
+        font-family: var(--monospace, monospace);
+        font-size: 12pt;
     }
 }

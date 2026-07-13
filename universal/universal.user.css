@@ -13,7 +13,7 @@
 
 @-moz-document regexp('^.*$') {
     :root {
-        --monospace: "AnonymicePro Nerd Font Propo";
+        --monospace:  "AnonymicePro Nerd Font Propo";
         --sans-serif: "Inter Variable";
         --line-height: 1.5rem;
         
