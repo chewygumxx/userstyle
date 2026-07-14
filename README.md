@@ -33,7 +33,7 @@
 [Darkened Stylus]: <style/darkened-stylus>
 
 [usercss-arch_manpages]:    <../../raw/main/style/arch_manpages/arch_manpages.user.css>
-[usercss-chewyaude]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyaude/chewyaude.user.css>
+[usercss-chewyaude]:        <style/chewyaude/chewyaude.user.css?raw=true>
 [usercss-chewyivitai]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyivitai/chewyivitai.user.css>
 [usercss-chewyoogle]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyoogle/chewyoogle.user.css>
 [usercss-chewypedia]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewypedia/chewypedia.user.css>
