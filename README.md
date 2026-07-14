@@ -1,3 +1,5 @@
+<!-- vim: foldmethod=marker
+-->
 # chewygumxx's UserStyle Repository
 
 *Styleyou, Styleme, Stylus ^-^*
@@ -6,47 +8,62 @@
 
 - [GitHub Repo](https://github.com/openstyles/stylus)
 - [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-- [Chrome Web Store](https://i.imgur.com/kKppeSI.jpeg "https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne")
+- [Chrome Web Store](https://i.imgur.com/kKppeSI.jpeg)
 
 ## My Personal UserStyles
 
-| UserStyle                  | Description                                  | Install                                        |
-| -------------------------- | -------------------------------------------- | ---------------------------------------------- |
-| Arch Linux - Manual Pages  | Increase page width from 80ch to 100ch       | [![stylus-button][]][usercss-arch_manpages]    |
-| chewyaude                  | chewygumxx's Claude AI                       | [![stylus-button][]][usercss-chewyaude]        |
-| chewyivitai                | chewygumxx's Civitai                         | [![stylus-button][]][usercss-chewyivitai]      |
-| chewyoogle                 | (WIP) chewygumxx's Google                    | [![stylus-button][]][usercss-chewyoogle]       |
-| chewypedia                 | chewygumxx's Wikipedia                       | [![stylus-button][]][usercss-chewypedia]       |
-| chewyscloud                | chewygumxx's SoundCloud                      | [![stylus-button][]][usercss-chewyscloud]      |
-| chewytube                  | (WIP) chewygumxx's YouTube                   | [![stylus-button][]][usercss-chewytube]        |
-| chewytype                  | chewygumxx's Typing Practice                 | [![stylus-button][]][usercss-chewytype]        |
-| [Darkened Stylus][]        | Darkened Stylus Interface                    | [![stylus-button][]][usercss-darkened-stylus]  |
-| Documentation: Chezmoi     | Chezmoi online documentation pages           | [![stylus-button][]][usercss-doc_chezmoi]      |
-| Documentation: Z Shell     | Z Shell online and local documentation       | [![stylus-button][]][usercss-doc_zshell]       |
-| Linux Links                | Temporal displacement to the present         | [![stylus-button][]][usercss-linuxlinks]       |
-| Systemd - Manual Pages     | Set maximum width of content to 100ch        | [![stylus-button][]][usercss-systemd_manpages] |
-| Y Combinator - Hacker News | Increase width of replies from 80ch to 100ch | [![stylus-button][]][usercss-ycombinator]      |
-| Mozilla Extensions Library | (WIP) Colourscheme too desperate             | [![stylus-button][]][usercss-moz_ext_library]  |
+| UserStyle                  | Description                                  | Install                             |
+| -------------------------- | -------------------------------------------- | ----------------------------------- |
+| Arch Linux - Manual Pages  | Increase page width from 80ch to 100ch       | [![badge][]][ucss-arch_manpages]    |
+| chewyaude                  | chewygumxx's Claude AI                       | [![badge][]][ucss-chewyaude]        |
+| chewyivitai                | chewygumxx's Civitai                         | [![badge][]][ucss-chewyivitai]      |
+| chewyoogle                 | (WIP) chewygumxx's Google                    | [![badge][]][ucss-chewyoogle]       |
+| chewypedia                 | chewygumxx's Wikipedia                       | [![badge][]][ucss-chewypedia]       |
+| chewyscloud                | chewygumxx's SoundCloud                      | [![badge][]][ucss-chewyscloud]      |
+| chewytube                  | (WIP) chewygumxx's YouTube                   | [![badge][]][ucss-chewytube]        |
+| chewytype                  | chewygumxx's Typing Practice                 | [![badge][]][ucss-chewytype]        |
+| [Darkened Stylus][]        | Darkened Stylus Interface                    | [![badge][]][ucss-darkened-stylus]  |
+| Documentation: Chezmoi     | Chezmoi online documentation pages           | [![badge][]][ucss-doc_chezmoi]      |
+| Documentation: Z Shell     | Z Shell online and local documentation       | [![badge][]][ucss-doc_zshell]       |
+| Linux Links                | Temporal displacement to the present         | [![badge][]][ucss-linuxlinks]       |
+| Systemd - Manual Pages     | Set maximum width of content to 100ch        | [![badge][]][ucss-systemd_manpages] |
+| Y Combinator - Hacker News | Increase width of replies from 80ch to 100ch | [![badge][]][ucss-ycombinator]      |
+| Mozilla Extensions Library | (WIP) Colourscheme too desperate             | [![badge][]][ucss-moz_ext_library]  |
 
-[stylus-button]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg> 'Install directly with Stylus'
+<!-- {{{ Notes on referencing raw github user content -->
+<!-- The safest, but it's source code eyesore and I'm manually composing these -->
+<!-- <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyaude/chewyaude.user.css> -->
+
+<!-- These seem to load funny, when the link is clicked and followed GitHub hangs for a bit (at least on Firefox) -->
+<!-- <style/chewyaude/chewyaude.user.css?raw=true> -->
+
+<!-- Ideal for referencing raw content -->
+<!-- <../../raw/main/style/chewyaude/chewyaude.user.css> -->
+<!-- }}} -->
+
+[badge]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg>
 
 [Darkened Stylus]: <style/darkened-stylus>
 
-[usercss-arch_manpages]:    <../../raw/main/style/arch_manpages/arch_manpages.user.css>
-[usercss-chewyaude]:        <style/chewyaude/chewyaude.user.css?raw=true>
-[usercss-chewyivitai]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyivitai/chewyivitai.user.css>
-[usercss-chewyoogle]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyoogle/chewyoogle.user.css>
-[usercss-chewypedia]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewypedia/chewypedia.user.css>
-[usercss-chewyscloud]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyscloud/chewyscloud.user.css>
-[usercss-chewytube]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewytube/chewytube.user.css>
-[usercss-chewytype]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewytype/chewytype.user.css>
-[usercss-darkened-stylus]:  <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/darkened-stylus/darkened-stylus.user.css>
-[usercss-doc_chezmoi]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/doc_chezmoi/doc_chezmoi.user.css> 
-[usercss-doc_zshell]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/doc_zshell/doc_zshell.user.css>
-[usercss-linuxlinks]:       <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/linuxlinks/linuxlinks.user.css>
-[usercss-moz_ext_library]:  <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/moz_ext_library/moz_ext_library.user.css>
-[usercss-systemd_manpages]: <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/systemd_manpages/systemd_manpages.user.css>
-[usercss-ycombinator]:      <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/ycombinator/ycombinator.user.css>
+<!-- {{{ Link References to Raw UserCSS -->
+[ucss-arch_manpages]:    <../../raw/main/style/arch_manpages/arch_manpages.user.css>
+[ucss-chewyaude]:        <../../raw/main/style/chewyaude/chewyaude.user.css>
+[ucss-chewyivitai]:      <../../raw/main/style/chewyivitai/chewyivitai.user.css>
+[ucss-chewyoogle]:       <../../raw/main/style/chewyoogle/chewyoogle.user.css>
+[ucss-chewypedia]:       <../../raw/main/style/chewypedia/chewypedia.user.css>
+[ucss-chewyscloud]:      <../../raw/main/style/chewyscloud/chewyscloud.user.css>
+[ucss-chewytube]:        <../../raw/main/style/chewytube/chewytube.user.css>
+[ucss-chewytype]:        <../../raw/main/style/chewytype/chewytype.user.css>
+[ucss-darkened-stylus]:  <../../raw/main/style/darkened-stylus/darkened-stylus.user.css>
+[ucss-doc_chezmoi]:      <../../raw/main/style/doc_chezmoi/doc_chezmoi.user.css> 
+[ucss-doc_zshell]:       <../../raw/main/style/doc_zshell/doc_zshell.user.css>
+[ucss-linuxlinks]:       <../../raw/main/style/linuxlinks/linuxlinks.user.css>
+[ucss-moz_ext_library]:  <../../raw/main/style/moz_ext_library/moz_ext_library.user.css>
+[ucss-systemd_manpages]: <../../raw/main/style/systemd_manpages/systemd_manpages.user.css>
+[ucss-ycombinator]:      <../../raw/main/style/ycombinator/ycombinator.user.css>
+<!-- }}} -->
+
+
 
 ## UserStyles Adored
 
