@@ -28,9 +28,9 @@
 | Y Combinator - Hacker News | Increase width of replies from 80ch to 100ch | [![stylus-button][]][usercss-ycombinator]      |
 | Mozilla Extensions Library | (WIP) Colourscheme too desperate             | [![stylus-button][]][usercss-moz_ext_library]  |
 
-[stylus-button]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg> 'Open in Stylus Manager'
+[stylus-button]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg> 'Install directly with Stylus'
 
-[Darkened Stylus]: <style/darkened-stylus/README.md>
+[Darkened Stylus]: <style/darkened-stylus>
 
 [usercss-arch_manpages]:    <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/arch_manpages/arch_manpages.user.css>
 [usercss-chewyaude]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyaude/chewyaude.user.css>
