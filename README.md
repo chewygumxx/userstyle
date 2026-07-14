@@ -6,12 +6,12 @@
 
 - [GitHub Repo](https://github.com/openstyles/stylus)
 - [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-- [Chrome Web Store](https://i.imgur.com/kKppeSI.jpeg)'https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne'
+- [Chrome Web Store](https://i.imgur.com/kKppeSI.jpeg "https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne")
 
 ## My Personal UserStyles
 
-| UserStyle                  | Description                                  | Install                                |
-|----------------------------|----------------------------------------------|----------------------------------------|
+| UserStyle                  | Description                                  | Install                                        |
+| -------------------------- | -------------------------------------------- | ---------------------------------------------- |
 | Arch Linux - Manual Pages  | Increase page width from 80ch to 100ch       | [![stylus-button][]][usercss-arch_manpages]    |
 | chewyaude                  | chewygumxx's Claude AI                       | [![stylus-button][]][usercss-chewyaude]        |
 | chewyivitai                | chewygumxx's Civitai                         | [![stylus-button][]][usercss-chewyivitai]      |
@@ -20,7 +20,7 @@
 | chewyscloud                | chewygumxx's SoundCloud                      | [![stylus-button][]][usercss-chewyscloud]      |
 | chewytube                  | (WIP) chewygumxx's YouTube                   | [![stylus-button][]][usercss-chewytube]        |
 | chewytype                  | chewygumxx's Typing Practice                 | [![stylus-button][]][usercss-chewytype]        |
-| [Darkened Stylus](style/darkened-stylus/README.md)            | Darkened Stylus Interface                    | [![stylus-button][]][usercss-darkened-stylus]  |
+| [Darkened Stylus][]        | Darkened Stylus Interface                    | [![stylus-button][]][usercss-darkened-stylus]  |
 | Documentation: Chezmoi     | Chezmoi online documentation pages           | [![stylus-button][]][usercss-doc_chezmoi]      |
 | Documentation: Z Shell     | Z Shell online and local documentation       | [![stylus-button][]][usercss-doc_zshell]       |
 | Linux Links                | Temporal displacement to the present         | [![stylus-button][]][usercss-linuxlinks]       |
@@ -29,6 +29,8 @@
 | Mozilla Extensions Library | (WIP) Colourscheme too desperate             | [![stylus-button][]][usercss-moz_ext_library]  |
 
 [stylus-button]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg> 'Open in Stylus Manager'
+
+[Darkened Stylus]: <style/darkened-stylus/README.md>
 
 [usercss-arch_manpages]:    <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/arch_manpages/arch_manpages.user.css>
 [usercss-chewyaude]:        <https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/chewyaude/chewyaude.user.css>
