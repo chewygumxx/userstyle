@@ -32,10 +32,10 @@
 
 ## UserStyles Adored
 
-| UserStyle           | Description                        | Homepage                             |
-|---------------------|------------------------------------|--------------------------------------|
-| GitHub Moonlight    | A dark blue GitHub theme           | [brettm12345/github-moonlight][]     |
-| Stack Overflow Dark | Dark theme for Stack network sites | [StylishThemes/StackOverflow-Dark][] |
+| UserStyle           | Description                        | Homepage               |
+| ------------------- | ---------------------------------- | ---------------------- |
+| GitHub Moonlight    | A dark blue GitHub theme           | [github-moonlight][]   |
+| Stack Overflow Dark | Dark theme for Stack network sites | [StackOverflow-Dark][] |
 
 <!-- {{{ Notes on referencing raw github user content -->
 <!-- The safest, but it's source code eyesore and I'm manually composing these -->
@@ -48,31 +48,30 @@
 <!-- <../../raw/main/style/chewyaude/chewyaude.user.css> -->
 <!-- }}} -->
 
-<!-- {{{ Link References -->
-[gh-stylus]:       <https://github.com/openstyles/stylus>
+<!-- {{{ Link Reference -->
+[gh-stylus]:         <https://github.com/openstyles/stylus>
 [Firefox Extension]: <https://addons.mozilla.org/en-US/firefox/addon/styl-us/>
 [Chrome Web Store]:  <https://i.imgur.com/kKppeSI.jpeg>
 
+[Darkened Stylus]: <doc/darkened-stylus.md>
+
 [badge]: <https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg>
+[ucss-arch_manpages]:    <../../raw/main/style/arch_manpages.user.css>
+[ucss-chewyaude]:        <../../raw/main/style/chewyaude.user.css>
+[ucss-chewyivitai]:      <../../raw/main/style/chewyivitai.user.css>
+[ucss-chewyoogle]:       <../../raw/main/style/chewyoogle.user.css>
+[ucss-chewypedia]:       <../../raw/main/style/chewypedia.user.css>
+[ucss-chewyscloud]:      <../../raw/main/style/chewyscloud.user.css>
+[ucss-chewytube]:        <../../raw/main/style/chewytube.user.css>
+[ucss-chewytype]:        <../../raw/main/style/chewytype.user.css>
+[ucss-darkened-stylus]:  <../../raw/main/style/darkened-stylus.user.css>
+[ucss-doc_chezmoi]:      <../../raw/main/style/doc_chezmoi.user.css> 
+[ucss-doc_zshell]:       <../../raw/main/style/doc_zshell.user.css>
+[ucss-linuxlinks]:       <../../raw/main/style/linuxlinks.user.css>
+[ucss-moz_ext_library]:  <../../raw/main/style/moz_ext_library.user.css>
+[ucss-systemd_manpages]: <../../raw/main/style/systemd_manpages.user.css>
+[ucss-ycombinator]:      <../../raw/main/style/ycombinator.user.css>
 
-[Darkened Stylus]: <style/darkened-stylus>
-
-[ucss-arch_manpages]:    <../../raw/main/style/arch_manpages/arch_manpages.user.css>
-[ucss-chewyaude]:        <../../raw/main/style/chewyaude/chewyaude.user.css>
-[ucss-chewyivitai]:      <../../raw/main/style/chewyivitai/chewyivitai.user.css>
-[ucss-chewyoogle]:       <../../raw/main/style/chewyoogle/chewyoogle.user.css>
-[ucss-chewypedia]:       <../../raw/main/style/chewypedia/chewypedia.user.css>
-[ucss-chewyscloud]:      <../../raw/main/style/chewyscloud/chewyscloud.user.css>
-[ucss-chewytube]:        <../../raw/main/style/chewytube/chewytube.user.css>
-[ucss-chewytype]:        <../../raw/main/style/chewytype/chewytype.user.css>
-[ucss-darkened-stylus]:  <../../raw/main/style/darkened-stylus/darkened-stylus.user.css>
-[ucss-doc_chezmoi]:      <../../raw/main/style/doc_chezmoi/doc_chezmoi.user.css> 
-[ucss-doc_zshell]:       <../../raw/main/style/doc_zshell/doc_zshell.user.css>
-[ucss-linuxlinks]:       <../../raw/main/style/linuxlinks/linuxlinks.user.css>
-[ucss-moz_ext_library]:  <../../raw/main/style/moz_ext_library/moz_ext_library.user.css>
-[ucss-systemd_manpages]: <../../raw/main/style/systemd_manpages/systemd_manpages.user.css>
-[ucss-ycombinator]:      <../../raw/main/style/ycombinator/ycombinator.user.css>
-
-[brettm12345/github-moonlight]:     <https://github.com/brettm12345/github-moonlight>
-[StylishThemes/StackOverflow-Dark]: <https://github.com/StylishThemes/StackOverflow-Dark>
+[github-moonlight]:     <https://github.com/brettm12345/github-moonlight>
+[StackOverflow-Dark]:   <https://github.com/StylishThemes/StackOverflow-Dark>
 <!-- }}} -->

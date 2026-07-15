@@ -8,7 +8,7 @@
 
 @homepageURL    https://github.com/chewygumxx/userstyle
 @supportURL     https://github.com/chewygumxx/userstyle/issues
-@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/systemd_manpages/systemd_manpages.user.css
+@updateURL      https://raw.githubusercontent.com/chewygumxx/userstyle/main/style/systemd_manpages.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.freedesktop.org/software/systemd/man") {
