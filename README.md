@@ -1,15 +1,20 @@
-<!-- vim:set expandtab shiftwidth=2 filetype=markdown foldmethod=marker foldlevel=0: -->
-<!-- SPDX-License-Identifier: GPL-3.0-only -->
+---
+ctime: 2026-06-16
+mtime: 2026-10-05
+spdx: GPL-3.0-only
+title: "chewygumxx's UserStyle Repository"
+description: Personal userstyle repository
+tags:
+  - userstyle
+  - stylus
+  - css
+---
 
 <!--
    -
    - ~chewygumxx/userstyle.git
    - ::: :/README.md
    -
-   -->
-
-<!--
-   - Personal userstyle repository
    -->
 
 # chewygumxx's UserStyle Repository
@@ -87,3 +92,4 @@
 <!-- <../../raw/main/style/chewyaude/chewyaude.user.css> -->
 <!-- }}} -->
 
+<!-- vim:set expandtab shiftwidth=2 filetype=markdown foldmethod=marker foldlevel=0: -->
